@@ -1,4 +1,9 @@
 /* Dùng chung */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -24,7 +29,7 @@ a {
 }
 
 .header .logo {
-  background-image: url(/assets/img/logo.png);
+  background-image: url("../img/logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
