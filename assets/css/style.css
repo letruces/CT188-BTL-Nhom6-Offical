@@ -1,0 +1,53 @@
+/* Dùng chung */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "open sans", sans-serif;
+  color: #263238;
+}
+
+a {
+  text-decoration: none;
+  color: #263238;
+}
+/* ---------------------------------------------------------------------------- */
+
+/* Header */
+.header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  background-color: #e3f2fd;
+}
+
+.header .logo {
+  background-image: url(/assets/img/logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 8rem;
+}
+
+.header nav {
+  flex-grow: 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 1.8rem;
+  padding: 1.6rem;
+}
+
+nav a:hover {
+  text-shadow: 0.4px 0 0 currentColor;
+}
+/* ---------------------------------------------------------------------------- */
