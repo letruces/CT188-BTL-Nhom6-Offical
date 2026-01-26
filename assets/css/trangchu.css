@@ -1,0 +1,119 @@
+.hero img {
+  width: -webkit-fill-available;
+}
+
+/* Why-us */
+.why-us {
+  padding: 7rem 0;
+}
+
+.why-us-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.why-us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.why-us h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.why-us-img img {
+  /* width: 100%; */
+  object-fit: cover;
+  width: 31rem;
+  height: 35rem;
+  border-radius: 20px;
+}
+/*----------------------------------------------------------------------------------------- */
+/* Roadmap */
+
+.roadmap {
+  padding: 7rem 0;
+  background-color: #ccfcff;
+}
+
+.roadmap-body-1,
+.roadmap-body-2 {
+  display: flex;
+  gap: 60px;
+  justify-content: space-evenly;
+}
+
+.roadmap-body-2 {
+  margin-top: 9rem;
+}
+
+.roadmap h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.road-inf p {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  justify-content: justify;
+}
+
+/* .road-inf,
+.roadmap-img {
+  margin-top: 90px;
+} */
+
+.roadmap-img img {
+  width: 40rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/*----------------------------------------------------------------------------------------- */
+/* Feedback */
+.feedback {
+  padding: 7rem 0;
+}
+
+.feedback-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 3rem;
+}
+
+.feedback h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.feedback-name {
+  font-weight: 700;
+}
+
+.feedback-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-img img {
+  width: 31rem;
+  height: 31rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-inf p {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  text-align: center;
+  font-style: italic;
+}
