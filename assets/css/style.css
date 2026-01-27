@@ -66,3 +66,37 @@ nav a:hover {
   text-shadow: 0.4px 0 0 currentColor;
 }
 /* ---------------------------------------------------------------------------- */
+/* Footer */
+.footer {
+  background-color: #f3fffe;
+  padding: 1rem 0 2rem;
+}
+
+.footer-logo img {
+  width: 20rem;
+  object-fit: cover;
+  height: 8rem;
+  margin-left: -35px;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5px;
+}
+
+.footer-name {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info {
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.footer-icon {
+  margin-right: 8px;
+}
+/* ------------------------------------------------------------------------------- */
