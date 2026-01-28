@@ -25,6 +25,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.chocolate {
+  color: chocolate;
+}
+.nav-green {
+  color: #67a606;
+}
 /* ---------------------------------------------------------------------------- */
 
 /* Header */
@@ -32,7 +38,13 @@ a {
   height: 8rem;
   background-color: #e3f2fd;
 }
-
+.navbar-right {
+  float: right;
+}
+.home-style {
+  text-shadow: 0.4px 0 0 black;
+  font-size: 1.9rem;
+}
 .header-body {
   display: flex;
   align-items: center;

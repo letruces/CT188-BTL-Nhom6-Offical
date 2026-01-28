@@ -15,9 +15,14 @@
 }
 
 .why-us-reason {
+  width: 100%;
+  display: flex;
   padding-bottom: 30px;
   transition: 0.3s;
   border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .why-us-reason:hover {
@@ -76,9 +81,8 @@
   line-height: 1.8;
   justify-content: justify;
 }
-
 .roadmap-img img {
-  width: 40rem;
+  width: 100%;
   border-radius: 24px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
@@ -91,8 +95,11 @@
 .feedback-body {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
   margin-top: 3rem;
+}
+
+.feedback-item {
+  width: 100%;
 }
 
 .feedback h2 {
@@ -264,7 +271,7 @@
   color: #e53935;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .faq-item {
