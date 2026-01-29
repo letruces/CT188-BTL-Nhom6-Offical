@@ -1,0 +1,188 @@
+/*chung*/
+.section-title {
+  text-align: center;
+  /* font-family: "Sen", sans-serif; */
+  font-weight: 700;
+  font-size: 2.5rem;
+  /* color: #444; */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+/* Hero */
+.intro-bgr {
+  width: 100%;
+  height: 70vh;
+  min-height: 300px;
+  background-image: url(../img/gioithieu/background.png);
+  background-size: cover;
+  background-position: center;
+}
+/*Brand*/
+
+.brand {
+  background-color: #d6f6f9;
+  padding: 60px 0;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.brand-story-text {
+  flex: 1;
+  /* font-style: italic; */
+  font-size: 2rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.brand-image {
+  flex: 1;
+}
+
+.brand-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*PP Giang day*/
+.methods {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.method-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.method-item {
+  width: 100%;
+  text-align: center;
+  flex: 1;
+  border: 1px #ddd solid;
+  padding: 20px;
+  border-radius: 10px;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+  background-color: #fff;
+}
+
+.method-img {
+  padding: 5px;
+  background: #fff;
+  margin-bottom: 15px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.method-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.method-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  border-color: #aaa;
+}
+
+.method-item h3 {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/*Giao vien*/
+
+.teacher {
+  padding: 40px 0;
+  background-color: #fffbcc;
+}
+
+.teacher-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.teacher-item {
+  text-align: center;
+  background: transparent;
+  width: 335px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.teacher-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  border-color: #aaa;
+}
+
+.teacher-img {
+  width: 300px;
+  height: 360px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.teacher-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.teacher-name {
+  font-family: "Sen", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.teacher-item p {
+  font-size: 1.5rem;
+  margin: 2px 0;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.teacher-view-more {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.teacher-view-more a {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #333;
+  font-family: "Sen", sans-serif;
+}
+
+.library img {
+  width: 100%;
+  display: block;
+}

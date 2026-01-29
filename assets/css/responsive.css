@@ -7,6 +7,7 @@
 
 /* Tablet and Mobile */
 @media (max-width: 991.98px) {
+  /* Trang chủ */
   .header .navbar {
     display: none;
   }
@@ -116,6 +117,37 @@
   }
   .footer-info {
     font-size: 1.2rem;
+  }
+  /* ----------------------------------------------------------------------- */
+  /* Giới thiệu */
+  .method-list,
+  .teacher-list,
+  .brand-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .method-item {
+    width: 80%;
+  }
+  .intro-bgr {
+    height: 40vh;
+    min-height: 220px;
+  }
+  /* Login */
+  .login-img {
+    display: none;
+  }
+  .container_login {
+    flex-direction: column;
+    width: 90%;
+  }
+  .form-sign-in {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container_login > div {
+    flex: 0;
   }
 }
 /* Tablet */
