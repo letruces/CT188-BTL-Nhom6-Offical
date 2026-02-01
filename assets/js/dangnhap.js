@@ -15,5 +15,5 @@ function login() {
 
 function togglePassword() {
   const passwordInput = document.getElementById("password");
-  passwordInput.type === "password" ? "text" : "password";
+  passwordInput.type = passwordInput.type === "password" ? "text" : "password";
 }
