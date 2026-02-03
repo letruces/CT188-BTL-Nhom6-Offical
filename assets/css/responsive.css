@@ -12,7 +12,7 @@
     display: none;
   }
   .header {
-    position: relative;
+    /* position: relative; */
   }
   .header .logo {
     position: absolute;
@@ -20,10 +20,11 @@
     translate: -50% 50%;
   }
   .menu-header__icon {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     top: 25px;
     left: 0;
+    z-index: 1;
   }
   .menu-overlay {
     inset: 0;
