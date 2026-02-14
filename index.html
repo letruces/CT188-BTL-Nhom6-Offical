@@ -253,9 +253,9 @@
             <div class="consult-img">
               <img src="./assets/img/trangchu/care.jpg" alt="" />
             </div>
-            <div class="consult-form">
+            <div class="consult-form" >
               <h2>ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h2>
-              <form action="">
+              <form action="" id="consult-form">
                 <label class="form-label">
                   Họ và tên:
                   <input
@@ -269,7 +269,7 @@
                   />
                 </label>
                 <label class="form-label">
-                  Email:
+                  Email (nếu có):
                   <input
                     class="form-input"
                     type="email"
@@ -277,7 +277,6 @@
                     id=""
                     placeholder="Email"
                     autocomplete="off"
-                    required
                   />
                 </label>
                 <label class="form-label">
@@ -330,6 +329,9 @@
                   value="ĐĂNG KÝ TƯ VẤN"
                 />
               </form>
+              <div id="popup" class="popup">
+                <p>Đăng ký thành công!</p>
+              </div>  
             </div>
           </div>
         </div>
@@ -484,6 +486,9 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/js/trangchu.js"></script>
+    <a href="" class="btn-contact">
+      <i class="fa-brands fa-facebook-messenger color-blue"></i>
+    </a>
+    <script src="./assets/js/trangchu.js"></script>    
   </body>
 </html>

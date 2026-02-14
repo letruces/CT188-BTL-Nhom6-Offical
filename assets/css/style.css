@@ -37,6 +37,9 @@ a {
 .color-blue {
   color: blue;
 }
+.dis-none {
+  display: none;
+}
 /* ---------------------------------------------------------------------------- */
 
 /* Header */
@@ -126,3 +129,31 @@ nav a:hover {
   margin-right: 8px;
 }
 /* ------------------------------------------------------------------------------- */
+.btn-contact {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  /* animation: shakePause 2.5s infinite; */
+}
+.btn-contact i {
+  animation: wiggle 0.6s infinite;
+  font-size: 3em;
+}
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+}

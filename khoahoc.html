@@ -32,7 +32,7 @@
           <nav class="navbar">
             <ul class="navbar-left">
               <li>
-                <a href="index.html" >Trang chủ</a>
+                <a href="index.html">Trang chủ</a>
               </li>
               <li><a href="./gioithieu.html">Giới thiệu</a></li>
               <li><a href="./khoahoc.html" class="home-style">Khóa học</a></li>
@@ -66,7 +66,7 @@
           width="70"
           viewBox="0 0 640 640"
         >
-          <path 
+          <path
             d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
           />
         </svg>
@@ -87,22 +87,27 @@
               class="menu-drawer-iconclose"
             >
               <path
-              fill="#1a72bf"
+                fill="#1a72bf"
                 d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"
               />
             </svg>
+          </label>
         </div>
         <ul class="menu-drawer-list">
           <li>
             <a href="index.html" class="navbar-link">Trang chủ</a>
           </li>
-          <li><a href="./gioithieu.html" class="navbar-link" >Giới thiệu</a></li>
+          <li><a href="./gioithieu.html" class="navbar-link">Giới thiệu</a></li>
           <li><a href="./khoahoc.html" class="navbar-link">Khóa học</a></li>
           <li>
-            <a href="./dangky.html" class="navbar-link color-chocolate">Đăng ký</a>
+            <a href="./dangky.html" class="navbar-link color-chocolate"
+              >Đăng ký</a
+            >
           </li>
           <li>
-            <a href="./dangnhap.html"  class="navbar-link color-green">Đăng nhập</a>
+            <a href="./dangnhap.html" class="navbar-link color-green"
+              >Đăng nhập</a
+            >
           </li>
         </ul>
       </div>
@@ -112,23 +117,39 @@
         <div class="container">
           <div class="course-body">
             <div class="course-sidebar">
-              <div class="child-course" >
+              <div class="child-course">
                 <h2>CÁC KHÓA HỌC</h2>
-                <a class="nav-sidebar-btn" href="khoahoc.html">Khóa học Mầm non</a>
+                <a class="nav-sidebar-btn" href="khoahoc.html"
+                  >Khóa học Mầm non</a
+                >
                 <ul class="subList">
                   <li><a href="khoahoc.html#mamnon-hero">Giới thiệu</a></li>
-                  <li><a href="khoahoc.html#mamnon-program">Chương trình</a></li>
-                  <li><a href="khoahoc.html#mamnon-environment">Môi trường học tập</a></li>
-                  <li><a href="khoahoc.html#mamnon-course">Danh sách khóa học</a></li>
+                  <li>
+                    <a href="khoahoc.html#mamnon-program">Chương trình</a>
+                  </li>
+                  <li>
+                    <a href="khoahoc.html#mamnon-environment"
+                      >Môi trường học tập</a
+                    >
+                  </li>
+                  <li>
+                    <a href="khoahoc.html#mamnon-course">Danh sách khóa học</a>
+                  </li>
                 </ul>
               </div>
-              <div class="child-course" >
-                <a class="nav-sidebar-btn" href="tieuhoc.html">Khóa học Tiểu học</a>
+              <div class="child-course">
+                <a class="nav-sidebar-btn" href="tieuhoc.html"
+                  >Khóa học Tiểu học</a
+                >
                 <ul class="subList">
                   <li><a href="tieuhoc.html#tieuhoc-hero">Giới thiệu</a></li>
-                  <li><a href="tieuhoc.html#tieuhoc-program">Chương trình</a></li>
                   <li>
-                    <a href="tieuhoc.html#tieuhoc-environment">Môi trường học tập</a>
+                    <a href="tieuhoc.html#tieuhoc-program">Chương trình</a>
+                  </li>
+                  <li>
+                    <a href="tieuhoc.html#tieuhoc-environment"
+                      >Môi trường học tập</a
+                    >
                   </li>
                   <li>
                     <a href="tieuhoc.html#tieuhoc-course">Danh sách khóa học</a>
@@ -137,6 +158,16 @@
               </div>
             </div>
             <div class="course-content">
+              <!--Video-->
+              <section class="section-video">
+                <video
+                  src="./assets/img/khoahoc/gtmn.mp4"
+                  controls
+                  autoplay
+                  muted
+                  loop
+                ></video>
+              </section>
               <section class="hero" id="mamnon-hero">
                 <div class="hero_inner">
                   <div class="hero_image">
@@ -145,21 +176,21 @@
                       alt="Giới thiệu khóa học"
                     />
                   </div>
-  
+
                   <div class="hero_content">
                     <h1>KHÓA HỌC TIẾNG ANH MẦM NON</h1>
                     <h2>Khởi đầu tiếng anh đầy vui</h2>
-  
+
                     <p>
-                      Khóa học giúp bé làm quen tiếng Anh qua trò chơi, bài hát và
-                      kể chuyện sinh động. Giúp trẻ phát triển khả năng nghe - nói
-                      tự nhiên, hình thành sự tự tin và yêu thích ngôn ngữ ngay từ
-                      những năm đầu đời.
+                      Khóa học giúp bé làm quen tiếng Anh qua trò chơi, bài hát
+                      và kể chuyện sinh động. Giúp trẻ phát triển khả năng nghe
+                      - nói tự nhiên, hình thành sự tự tin và yêu thích ngôn ngữ
+                      ngay từ những năm đầu đời.
                     </p>
                   </div>
                 </div>
               </section>
-  
+
               <section class="program" id="mamnon-program">
                 <div class="program_inner">
                   <div class="program_image">
@@ -170,11 +201,11 @@
                   </div>
                   <div class="program_content">
                     <h2>CHƯƠNG TRÌNH</h2>
-  
+
                     <p>
-                      Giai đoạn 3 - 6 tuổi là thời kỳ vàng để hình thành nền tảng
-                      ngôn ngữ và cảm xúc tích cực với việc học. SkillHub được
-                      thiết kế riêng biệt theo độ tuổi này:
+                      Giai đoạn 3 - 6 tuổi là thời kỳ vàng để hình thành nền
+                      tảng ngôn ngữ và cảm xúc tích cực với việc học. SkillHub
+                      được thiết kế riêng biệt theo độ tuổi này:
                     </p>
                     <ol>
                       <li>Làm quen tiếng Anh qua hình ảnh.</li>
@@ -184,16 +215,19 @@
                   </div>
                 </div>
               </section>
-  
+
               <section class="environment" id="mamnon-environment">
                 <div class="environment_inner">
                   <h2>MÔI TRƯỜNG HỌC TẬP</h2>
-  
+
                   <article class="environment_item">
-                    <img src="./assets/img/khoahoc/mn3.png" alt="Con được hiểu" />
+                    <img
+                      src="./assets/img/khoahoc/mn3.png"
+                      alt="Con được hiểu"
+                    />
                     <p>Con được hiểu</p>
                   </article>
-  
+
                   <article class="environment_item">
                     <img
                       src="./assets/img/khoahoc/mn4.png"
@@ -201,12 +235,15 @@
                     />
                     <p>Con được đồng hành</p>
                   </article>
-  
+
                   <article class="environment_item">
-                    <img src="./assets/img/khoahoc/mn5.png" alt="Con được thấy" />
+                    <img
+                      src="./assets/img/khoahoc/mn5.png"
+                      alt="Con được thấy"
+                    />
                     <p>Con được thấy</p>
                   </article>
-  
+
                   <article class="environment_item">
                     <img
                       src="./assets/img/khoahoc/mn6.png"
@@ -216,7 +253,7 @@
                   </article>
                 </div>
               </section>
-  
+
               <section class="course" id="mamnon-course">
                 <div class="course_inner">
                   <h2>KHÓA HỌC MẦM NON SKILLHUB</h2>
@@ -224,81 +261,135 @@
                     <h3>Khóa học cho bé từ 3 - 4 tuổi</h3>
                     <div class="course_list">
                       <!--Khoa hoc 1-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article class="course_item">
-                          <img
-                            src="./assets/img/khoahoc/mn7.png"
-                            alt="PreKids Starter"
-                          />
-                          <p>PreKids Starter</p>
-                        </article>
-                      </a>
-  
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn7.png"
+                          alt="PreKids Starter"
+                        />
+                        <h4>PreKids Starter</h4>
+                        <p>
+                          Khóa học giúp bé làm quen chữ cái, từ vựng và âm cơ
+                          bản qua hình ảnh, bài hát và trò chơi, tạo nền tảng
+                          tiếng Anh tự nhiên và vui nhộn.
+                        </p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
+
                       <!--Khoa hoc 2-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article>
-                          <img
-                            src="./assets/img/khoahoc/mn8.png"
-                            alt="PreKids Phonic 1"
-                          />
-                          <p>PreKids Phonics 1</p>
-                        </article>
-                      </a>
-  
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn8.png"
+                          alt="PreKids Phonic 1"
+                        />
+                        <h4>PreKids Phonics 1</h4>
+                        <p>
+                          Khóa học giúp bé nhận biết âm chữ cái, ghép âm cơ bản
+                          và phát âm chuẩn ngay từ những bước đầu học tiếng Anh.
+                        </p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
+
                       <!--Khoa hoc 3-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article>
-                          <img
-                            src="./assets/img/khoahoc/mn9.png"
-                            alt="PreKids Speaking Fun"
-                          />
-                          <p>PreKids Speaking Fun</p>
-                        </article>
-                      </a>
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn9.png"
+                          alt="PreKids Speaking Fun"
+                        />
+                        <h4>PreKids Speaking Fun</h4>
+                        <p>
+                          Khóa học giúp bé phát triển kỹ năng nói tiếng Anh tự
+                          nhiên qua trò chơi, bài hát và hoạt động giao tiếp vui
+                          nhộn.
+                        </p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
                     </div>
                   </section>
-  
+
                   <section class="course_group">
                     <h3>Khóa học cho bé từ 4 - 6 tuổi</h3>
                     <div class="course_list">
                       <!--Khoa hoc 4-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article class="course_item">
-                          <img
-                            src="./assets/img/khoahoc/mn10.png"
-                            alt="Kids Basis"
-                          />
-                          <p>Kids Basic (Kinder 1)</p>
-                        </article>
-                      </a>
-  
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn10.png"
+                          alt="Kids Basis"
+                        />
+                        <h4>Kids Basic (Kinder 1)</h4>
+                        <p>
+                          Khóa học giúp trẻ xây dựng nền tảng tiếng Anh cơ bản,
+                          phát triển từ vựng và mẫu câu đơn giản phù hợp lứa
+                          tuổi mầm non.
+                        </p>
+                        <p></p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
+
                       <!--Khoa hoc 5-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article class="course_item">
-                          <img
-                            src="./assets/img/khoahoc/mn11.png"
-                            alt="Kids Phonic 2"
-                          />
-                          <p>Kids Phonic 2</p>
-                        </article>
-                      </a>
-  
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn11.png"
+                          alt="Kids Phonic 2"
+                        />
+                        <h4>Kids Phonic 2</h4>
+                        <p>
+                          Khóa học giúp trẻ nâng cao kỹ năng ghép âm, phát âm
+                          chuẩn và đọc các từ, câu tiếng Anh đơn giản một cách
+                          tự tin.
+                        </p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
+
                       <!--Khoa hoc 6-->
-                      <a href="" class="course_link">
-                        <!--Link khoa hoc-->
-                        <article class="course_item">
-                          <img
-                            src="./assets/img/khoahoc/mn12.png"
-                            alt="Kids Communication"
-                          />
-                          <p>Kids Communication</p>
-                        </article>
-                      </a>
+                      <article class="course_item">
+                        <img
+                          src="./assets/img/khoahoc/mn12.png"
+                          alt="Kids Communication"
+                        />
+                        <h4>Kids Communication</h4>
+                        <p>
+                          Khóa học giúp trẻ phát triển kỹ năng giao tiếp tiếng
+                          Anh tự nhiên, tự tin sử dụng từ vựng và mẫu câu trong
+                          các tình huống quen thuộc.
+                        </p>
+                        <!--Them link-->
+                        <div class="course_action">
+                          <a href="" class="course_link">Xem chi tiết</a>
+                          <button class="course_register" type="button">
+                            Đăng Ký Ngay
+                          </button>
+                        </div>
+                      </article>
                     </div>
                   </section>
                 </div>
@@ -307,7 +398,6 @@
           </div>
         </div>
       </div>
-        
     </main>
     <footer class="footer">
       <div class="container">
@@ -331,17 +421,13 @@
             <ul class="footer-contact">
               <li>
                 <a href="" class="footer-info"
-                  ><i
-                    class="fa-brands fa-facebook footer-icon color-blue"
-                  ></i
+                  ><i class="fa-brands fa-facebook footer-icon color-blue"></i
                   >CTY GROUP SIX</a
                 >
               </li>
               <li>
                 <a href="" class="footer-info"
-                  ><i
-                    class="fa-brands fa-youtube footer-icon color-red"
-                  ></i
+                  ><i class="fa-brands fa-youtube footer-icon color-red"></i
                   >GROUP SIX</a
                 >
               </li>
@@ -364,6 +450,9 @@
         </div>
       </div>
     </footer>
+    <a href="" class="btn-contact">
+      <i class="fa-brands fa-facebook-messenger color-blue"></i>
+    </a>
     <script src="./assets/js/khoahoc.js"></script>
   </body>
 </html>

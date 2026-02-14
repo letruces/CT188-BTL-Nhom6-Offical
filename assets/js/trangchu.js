@@ -24,3 +24,16 @@ faqItems.forEach((item) => {
     }
   });
 });
+const form = document.getElementById("consult-form");
+const popup = document.getElementById("popup");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  popup.classList.add("show");
+  setTimeout(() => {
+    popup.classList.add("hide");
+    setTimeout(() => {
+      popup.classList.remove("show", "hide");
+    }, 400);
+  }, 3000);
+  form.reset();
+});
