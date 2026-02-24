@@ -1,6 +1,6 @@
 /* Phần chung */
 .course-section {
-  background-color: #e5fafe;
+  background-color: #f0fbff;
 }
 #mamnon-course,
 #mamnon-environment,
@@ -12,11 +12,12 @@
 #tieuhoc-course {
   scroll-margin-top: 60px;
 }
+/* --------------------------------------------------------- */
 /* Phần mầm non */
 /* Hero */
 .hero {
   /* margin-top: 32px; */
-  background-color: #f2e9a2;
+  background: #eafdfc;
   /* padding: 20px 0; */
   /* border-radius: 15px; */
   max-width: 1200px;
@@ -108,7 +109,8 @@
 /* Environment */
 .environment {
   /* margin: 15px; */
-  background: #f7eeee;
+  background: #eafdfc;
+  border-top: 1px solid rgba(15, 76, 92, 0.05);
   padding: 5rem 0;
   /* border-radius: 15px; */
 }
@@ -153,7 +155,7 @@
 
 /* Course */
 .course {
-  background-color: #f2e9a2;
+  background: #f2fffd;
   padding: 60px 0;
   /* border-radius: 20px; */
 }
@@ -187,7 +189,7 @@
 }
 .course_item {
   flex: 1 1 calc(33.33% - 32px);
-  border: 2px solid transparent;
+  border: 2px solid #ccc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -292,7 +294,8 @@
   position: sticky;
   top: 80px;
   align-self: flex-start;
-  background-color: #d4eef3;
+  background-color: #f2fffd;
+  border: 1px solid #ccc;
   width: 30%;
   height: calc(100vh - 80px);
   padding: 20px;
@@ -302,6 +305,7 @@
 }
 .course-body {
   display: flex;
+  gap: 10px;
 }
 .subList {
   max-height: 0;
@@ -328,7 +332,6 @@
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
 /* Phần tiểu học */
 .section-video {
   display: flex;

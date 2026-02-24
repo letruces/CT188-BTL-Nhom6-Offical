@@ -88,6 +88,9 @@
     align-items: center;
     row-gap: 15px;
   }
+  .feedback-item {
+    width: 100%;
+  }
   .why-us,
   .consult,
   .roadmap,
@@ -100,7 +103,9 @@
     margin-bottom: -50px;
     row-gap: 15px;
   }
-
+  .roadmap-img img {
+    width: 100%;
+  }
   .why-us h3,
   .why-us h2,
   .roadmap h2 {

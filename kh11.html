@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/khoahocrieng.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <title>SkillHub - Khóa học</title>
+  </head>
+  <body>
+    <header class="header fixed">
+      <div class="container">
+        <div class="header-body">
+          <a href="index.html" class="logo"></a>
+          <nav class="navbar">
+            <ul class="navbar-left">
+              <li>
+                <a
+                  href="index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li><a href="./gioithieu.html">Giới thiệu</a></li>
+              <li><a href="./khoahoc.html" class="home-style">Khóa học</a></li>
+            </ul>
+            <ul class="navbar-right">
+              <li>
+                <a href="./dangky.html" class="color-chocolate">Đăng ký</a>
+              </li>
+              <li>
+                <a href="./dangnhap.html" class="color-green">Đăng nhập</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Responsive mobile/tablet header -->
+    <div class="mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+      <label for="menu-checkbox">
+        <svg
+          class="menu-header__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          height="30"
+          width="70"
+          viewBox="0 0 640 640"
+        >
+          <path 
+            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+          />
+        </svg>
+      </label>
+      <!-- Overlay menu -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- Menu content -->
+      <div class="menu-drawer">
+        <!-- Nav mobile -->
+        <div class="menu-drawer-top">
+          <a href="index.html" class="mobile-drawer-logo"></a>
+          <label for="menu-checkbox">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              height="30"
+              width="30"
+              class="menu-drawer-iconclose"
+            >
+              <path
+              fill="#1a72bf"
+                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"
+              />
+            </svg>
+        </div>
+        <ul class="menu-drawer-list">
+          <li>
+            <a href="index.html" class="navbar-link">Trang chủ</a>
+          </li>
+          <li><a href="./gioithieu.html" class="navbar-link" >Giới thiệu</a></li>
+          <li><a href="./khoahoc.html" class="navbar-link">Khóa học</a></li>
+          <li>
+            <a href="./dangky.html" class="navbar-link color-chocolate">Đăng ký</a>
+          </li>
+          <li>
+            <a href="./dangnhap.html" class="navbar-link color-green">Đăng nhập</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+        <section class="course-hero">
+            <div class="container">
+                <div class="course-hero-body">
+                    <div class="course-intro">
+                        <h1 class="title-section">Primary Writing</h1>
+                        <p>Primary Writing là chương trình tiếng Anh khởi đầu dành riêng cho các bé từ 3 đến 5 tuổi, giúp trẻ làm quen với ngôn ngữ mới một cách tự nhiên và vui nhộn. 
+                        Thông qua các hoạt động sinh động như trò chơi, bài hát, kể chuyện và tương tác cùng giáo viên, bé sẽ tiếp thu tiếng Anh nhẹ nhàng như một phần trong cuộc sống hằng ngày.
+                        Khóa học tập trung xây dựng nền tảng nghe – nói cơ bản, phát triển khả năng phát âm chuẩn và tạo sự tự tin cho bé ngay từ những bước đầu tiên. Với môi trường học tập thân thiện, lớp học sĩ số nhỏ và phương pháp giảng dạy phù hợp với lứa tuổi mầm non. 
+                        </p>
+                        <div class="course-feedback">
+                            <div class="course-rating">
+                                <span>5.0</span>
+                                <i class="fa-solid fa-star col-yellow"></i>
+                                <i class="fa-solid fa-star col-yellow"></i>
+                                <i class="fa-solid fa-star col-yellow"></i>
+                                <i class="fa-solid fa-star col-yellow"></i>
+                                <i class="fa-solid fa-star col-yellow"></i>
+                            </div>
+                            <div class="course-participants"><span>120 học viên</span></div>
+                        </div>
+                    </div>
+                    <div class="course-img">
+                        <img src="./assets/img/khoahoc/mn1.jpg" alt="PreKids Starter" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="course-nav">
+            <div class="container">
+                <div class="course-nav-list">
+                    <ul>
+                        <li><a href="#course-general">TỔNG QUAN</a></li>
+                        <li><a href="#course-syllabus">LỘ TRÌNH</a></li>
+                        <li><a href="#course-details">CHI TIẾT</a></li>
+                        <li><a href="#course-register">ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="course-general">
+          <div class="container">
+            <div class="course-general-body">
+              <h2 class="title-section">Tổng Quan Khóa Học</h2>
+              <h3>Khóa học Primary Writing 2026 chính là bước khởi đầu lý tưởng dành cho các bé mầm non từ 3–5 tuổi!</h3>
+              <ol class="course-general-list" >
+                Yêu cầu chung<br />Chương trình phù hợp cho bé mới bắt đầu. Phụ huynh chỉ cần:
+                <li >Cho bé tham gia đầy đủ</li>
+                <li>Khuyến khích bé tự tin giao tiếp</li>
+                <li>Đồng hành cùng con trong những buổi học đầu tiên</li>
+              </ol>
+              <ol class="course-general-list" >
+                Thông tin khóa học
+                <li>Số lượng bài học: 24 buổi (30% làm quen – 70% thực hành tương tác)</li>
+                <li>Thời gian học: 3 tháng</li>
+                <li>Hoạt động nổi bật: Học qua trò chơi, bài hát, flashcards, kể chuyện</li>
+                <li>Hình thức học: Học trực tiếp tại trung tâm</li>
+                <li>Số buổi mỗi tuần: 2 buổi (1.5h/buổi)</li>
+                <li>Sĩ số lớp: 8–12 bé/lớp</li>
+                <li>Yêu cầu đầu vào: Không cần biết trước tiếng Anh – chỉ cần bé thích khám phá</li>
+              </ol>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section id="course-syllabus">
+          <div class="container">
+            <div class="course-syllabus-body">
+              <h2 class="title-section">Lộ Trình Khóa Học</h2>
+              <div class="period-item">
+                <button class="period-title">Giai đoạn 1: Làm quen với tiếng Anh (Buổi 1 – 5) <span class="period-toggle">+</span></button>
+                <div class="period-inf">
+                  <ol class="period-list">
+                    <li><i class="fa-solid fa-play"></i>1. Giới thiệu bản thân và làm quen với bạn bè </li>
+                    <li><i class="fa-solid fa-play"></i>2. Học các từ vựng cơ bản về gia đình, màu sắc, số đếm</li>
+                    <li><i class="fa-solid fa-play"></i>3. Thực hành các câu chào hỏi đơn giản và giới thiệu bản thân</li>
+                    <li><i class="fa-solid fa-play"></i>4. Học qua bài hát và trò chơi để tăng cường sự hứng thú</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="period-item">
+                <button class="period-title">Giai đoạn 2: Phát triển kỹ năng giao tiếp cơ bản (Buổi 6 – 12) <span class="period-toggle">+</span></button>
+                <div class="period-inf">
+                  <ol class="period-list">
+                    <li><i class="fa-solid fa-play"></i>1. Học các từ vựng về đồ vật, động vật, và hoạt động hàng ngày</li>
+                    <li><i class="fa-solid fa-play"></i>2. Thực hành các câu đơn giản để mô tả và hỏi về đồ vật, sở thích</li>
+                    <li><i class="fa-solid fa-play"></i>3. Tham gia vào các hoạt động nhóm để phát triển kỹ năng giao tiếp</li>
+                    <li><i class="fa-solid fa-play"></i>4. Học qua kể chuyện và đóng vai để tăng cường sự tự tin</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="period-item">
+                <button class="period-title">Giai đoạn 3: Tăng cường sự tự tin và thực hành tương tác (Buổi 13 – 16) <span class="period-toggle">+</span></button>
+                <div class="period-inf">
+                  <ol class="period-list">
+                    <li><i class="fa-solid fa-play"></i>1. Học các câu đơn giản để thể hiện cảm xúc và ý kiến cá nhân</li>
+                    <li><i class="fa-solid fa-play"></i>2. Thực hành giao tiếp trong các tình huống hàng ngày như mua sắm, đi chơi</li>
+                    <li><i class="fa-solid fa-play"></i>3. Tham gia vào các hoạt động nhóm để phát triển kỹ năng làm việc nhóm</li>
+                    <li><i class="fa-solid fa-play"></i>4. Tổng kết và đánh giá sự tiến bộ của bé qua các hoạt động tương tác</li>
+                  </ol>
+              </div>
+            </div>
+            <div class="period-item">
+              <button class="period-title">Giai đoạn 4: Làm quen chữ viết & đọc đơn giản (Buổi 17 – 20) <span class="period-toggle">+</span></button>
+              <div class="period-inf">
+                <ol class="period-list">
+                  <li><i class="fa-solid fa-play"></i>1. Phonics nâng cao</li>
+                  <li><i class="fa-solid fa-play"></i>2. Thực hành giao tiếp Sight words cơ bản: a, the, is, I</li>
+                  <li><i class="fa-solid fa-play"></i>3. Viết từ đơn</li>
+                  <li><i class="fa-solid fa-play"></i>4. Tô chữ & viết nét cơ bản</li>
+                </ol>
+              </div>
+            </div>
+            <div class="period-item">
+              <button class="period-title">Giai đoạn 5: Tăng cường sự tự tin và thực hành tương tác (Buổi 20 – 24) <span class="period-toggle">+</span></button>
+              <div class="period-inf">
+                <ol class="period-list">
+                  <li><i class="fa-solid fa-play"></i>1. Học các câu đơn giản để giao tiếp câu 3–4 từ</li>
+                  <li><i class="fa-solid fa-play"></i>2. Thực hành giao tiếp sẵn sàng lên Cambridge Starters</li>
+                  <li><i class="fa-solid fa-play"></i>3. Nghe hiểu đoạn ngắn</li>
+                  <li><i class="fa-solid fa-play"></i>4. Tổng kết và đánh giá sự tiến bộ của bé qua các hoạt động tương tác</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="course-details">
+          <div class="container">
+            <h2 class="title-section">Mục Tiêu</h2>
+            <div class="course-details-body">
+              <div class="goal-item goal-item-1">
+                <div class="goal-img"><img src="./assets/img/khoahoc/icon1.png" alt=""></div>
+                <div class="goal-inf"><p> Nhận biết và sử dụng 80 – 120 từ vựng cơ bản</p></div>
+                <div class="goal-number"><span>1</span></div>
+              </div>
+              <div class="goal-item goal-item-2">
+                <div class="goal-img"><img src="./assets/img/khoahoc/icon2.png" alt=""></div>
+                <div class="goal-inf"><p> Nghe hiểu hướng dẫn đơn giản từ giáo viên</p></div>
+                <div class="goal-number"><span>2</span></div>
+              </div>
+              <div class="goal-item goal-item-3">
+                <div class="goal-img"><img src="./assets/img/khoahoc/icon3.png" alt=""></div>
+                <div class="goal-inf"><p>Phát triển phản xạ ngôn ngữ tự nhiên</p></div>
+                <div class="goal-number"><span>3</span></div>
+              </div>
+              <div class="goal-item goal-item-4">
+                <div class="goal-img"><img src="./assets/img/khoahoc/icon4.png" alt=""></div>
+                <div class="goal-inf"><p>Tự tin tham gia lớp học tiếng Anh vui vẻ</p></div>
+                <div class="goal-number"><span>4</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="course-register">
+          <div class="container">
+            <div class="course-register-body">
+              <div class="inf-left">
+                <h2 class="title-section">KHÓA HỌC PRIMARY WRITING</h2>
+                <p>Khóa học Primary Writing 2026 chính là bước khởi đầu lý tưởng dành cho các bé mầm non từ 3–5 tuổi!
+                  Khóa học được thiết kế đặc biệt giúp trẻ tiếp cận tiếng Anh một cách tự nhiên thông qua trò chơi, bài hát, kể chuyện và các hoạt động tương tác sinh động.</p>
+                  <img src="./assets/img/logo.png" alt="">
+                </div>
+              <div class="inf-right">
+                <h2 class="title-section text-center">ĐĂNG KÝ KHÓA HỌC</h2>
+                <form action="" id="register-form">
+                  <label class="form-label">
+                  Họ và tên:
+                  <input
+                    class="form-input"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Họ và tên"
+                    autocomplete="off"
+                    required
+                  />
+                </label>
+                <label class="form-label">
+                  Email (nếu có):
+                  <input
+                    class="form-input"
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Email"
+                    autocomplete="off"
+                  />
+                </label>
+                <label class="form-label">
+                  Địa chỉ:
+                  <input
+                    class="form-input"
+                    type="text"
+                    name=""
+                    id=""
+                    autocomplete="off"
+                    placeholder="Bạn đang ở đâu?"
+                  />
+                </label>
+                <label class="form-label">
+                  Số điện thoại:
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name=""
+                    id=""
+                    placeholder="Số điện thoại"
+                    autocomplete="off"
+                    required
+                  />
+                </label>
+                <input
+                  class="form-submit"
+                  type="submit"
+                  value="ĐĂNG KÝ NGAY"
+                />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="course-more">
+          <div class="container">
+            <h2 class="title-section text-center">KHÓA HỌC KHÁC</h2>
+            <div class="course-more-body">
+              <a class="course-item" href="./kh1.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn12.png" alt=""></div>
+                <div class="course-title">PreKids Starter 1</div>
+                <div class="course-inf">Khóa học giúp bé tiếp xúc và làm quen với môi trường tiếng Anh từ những bước đầu tiên.</div>
+              </a>
+              <a class="course-item" href="./kh2.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn5.png" alt=""></div>
+                <div class="course-title">PreKids Phonic 1</div>
+                <div class="course-inf">Khóa học giúp bé nhận biết âm chữ cái, ghép âm cơ bản và phát âm chuẩn.</div>
+              </a>
+              <a class="course-item" href="./kh3.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn4.png" alt=""></div>
+                <div class="course-title">PreKids Speaking Fun</div>
+                <div class="course-inf">Khóa học giúp bé phát triển kỹ năng nói tiếng Anh tự nhiên và hoạt động giao tiếp vui nhộn.</div>
+              </a>
+              <a class="course-item" href="./kh4.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn1.jpg" alt=""></div>
+                <div class="course-title">Kids Basic (Kinder 1)</div>
+                <div class="course-inf">Khóa học giúp trẻ xây dựng nền tảng tiếng Anh cơ bản, phát triển từ vựng và mẫu câu đơn giản.</div>
+              </a>
+              <a class="course-item" href="./kh5.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn6.png" alt=""></div>
+                <div class="course-title">Kids Phonic 2</div>
+                <div class="course-inf">Khóa học giúp trẻ nâng cao kỹ năng ghép âm, phát âm chuẩn và đọc các từ, câu tiếng Anh.</div>
+              </a>
+              <a class="course-item" href="./kh6.html">
+                <div class="course-img"><img src="./assets/img/khoahoc/mn9.png" alt=""></div>
+                <div class="course-title">Kids Communication</div>
+                <div class="course-inf">Khóa học giúp trẻ phát triển kỹ năng giao tiếp tiếng Anh trong các tình huống quen thuộc.</div>
+              </a>              
+            </div>
+            <div class="course-more-list">
+              <div class="course-more-body">
+                <a class="course-item" href="./kh7.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/mn10.png" alt=""></div>
+                  <div class="course-title">Primary Listening</div>
+                  <div class="course-inf">Rèn luyện kỹ năng nghe hiểu, nắm bắt ý chính và tăng phản xạ giao tiếp tiếng Anh.</div>
+                </a>              
+                <a class="course-item" href="./kh8.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/mn11.png" alt=""></div>
+                  <div class="course-title">Primary Speaking</div>
+                  <div class="course-inf">Rèn luyện kỹ năng giao tiếp tiếng Anh và phản xạ khi giao tiếp.</div>
+                </a>              
+                <a class="course-item" href="./kh9.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/mn7.png" alt=""></div>
+                  <div class="course-title">Primary Phonics & Reading</div>
+                  <div class="course-inf">Rèn luyện kỹ năng đọc hiểu và phát âm rõ ràng và chuẩn.</div>
+                </a>              
+                <a class="course-item" href="./kh10.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/th5.png" alt=""></div>
+                  <div class="course-title">Primary Reading</div>
+                  <div class="course-inf">Rèn luyện và nâng cao kỹ năng đọc hiểu thông qua các đoạn văn tiếp xúc hằng ngày.</div>
+                </a>  
+                <a class="course-item" href="./kh11.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/th11.png" alt=""></div>
+                  <div class="course-title">Primary Writing</div>
+                  <div class="course-inf">Rèn luyện và nâng cao kỹ năng đọc hiểu thông qua các đoạn văn tiếp xúc hằng ngày.</div>
+                </a>  
+                <a class="course-item" href="./kh12.html">
+                  <div class="course-img"><img src="./assets/img/khoahoc/th12.png" alt=""></div>
+                  <div class="course-title">Primary English Skills</div>
+                  <div class="course-inf">Khóa học giúp bé hoàn thiện cả 4 kỹ năng  chuẩn như người bản xứ.</div>
+                </a>              
+              </div>
+            </div>  
+            <div class="arrow-box course-view-more"><i class="fa-solid fa-angles-down"></i></div>
+          </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./assets/img/trangchu/logocty.png" alt="Logo công ty" />
+        </div>
+        <div class="footer-body">
+          <div class="footer-left">
+            <p class="footer-name">
+              Công ty Cổ phần Đầu tư phát triển Group Six
+            </p>
+            <p class="footer-info">
+              Địa chỉ: Tầng 6, Tòa nhà A6, Phố CT188, Ninh Kiều, Cần Thơ<br />
+              Tel: 0666188188 | Fax: 0188666188 | Email: groupsix@gmaill.com
+              <br />
+              Giờ làm việc: 7h - 11h30 | 13h - 21h
+            </p>
+          </div>
+          <div class="footer-center">
+            <p class="footer-name">Follow us</p>
+            <ul class="footer-contact">
+              <li>
+                <a href="" class="footer-info"
+                  ><i
+                    class="fa-brands fa-facebook footer-icon color-blue"
+                  ></i
+                  >CTY GROUP SIX</a
+                >
+              </li>
+              <li>
+                <a href="" class="footer-info"
+                  ><i
+                    class="fa-brands fa-youtube footer-icon color-red"
+                  ></i
+                  >GROUP SIX</a
+                >
+              </li>
+              <li>
+                <a href="" class="footer-info"
+                  ><i class="fa-brands fa-tiktok footer-icon"></i>GROUP SIX
+                  STORIES</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p class="footer-name">Hỗ trợ khách hàng</p>
+            <ul class="footer-support">
+              <li><a href="" class="footer-info">Chính sách và Bảo mật</a></li>
+              <li><a href="" class="footer-info">Quyền lợi khách hàng</a></li>
+              <li><a href="" class="footer-info">Hướng dẫn sử dụng</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/khoahocrieng.js"></script>
+  </body>
+</html>

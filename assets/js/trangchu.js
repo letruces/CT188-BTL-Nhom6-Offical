@@ -1,3 +1,4 @@
+// FAQ Accordion
 const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach((item) => {
@@ -24,6 +25,7 @@ faqItems.forEach((item) => {
     }
   });
 });
+// Consultation Form Popup
 const form = document.getElementById("consult-form");
 const popup = document.getElementById("popup");
 form.addEventListener("submit", function (e) {

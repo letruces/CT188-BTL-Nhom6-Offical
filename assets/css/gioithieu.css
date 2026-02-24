@@ -8,6 +8,15 @@
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  /* background: #fdec7b; */
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
 /* Hero */
 .intro-bgr {
   width: 100%;
@@ -20,10 +29,34 @@
 /*Brand*/
 
 .brand {
-  background-color: #d6f6f9;
+  background: linear-gradient(135deg, #f2fffd, #fffdf7);
   padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.brand::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #fdec7b;
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  opacity: 0.25;
 }
 
+.brand::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #58cbca;
+  border-radius: 50%;
+  bottom: -120px;
+  right: -120px;
+  opacity: 0.2;
+}
 .brand-content {
   display: flex;
   align-items: center;
@@ -36,8 +69,21 @@
   font-size: 2rem;
   text-align: left;
   line-height: 1.5;
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
 }
-
+.brand-story-text strong {
+  display: block;
+  background: #ee6961;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
 .brand-image {
   flex: 1;
 }
@@ -46,12 +92,14 @@
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
 }
-
+.brand-image img:hover {
+  transform: scale(1.03);
+}
 /*PP Giang day*/
-.methods {
-  padding: 60px 0;
-  background-color: #ffffff;
+.method {
+  padding: 40px 0;
 }
 
 .method-list {
@@ -64,13 +112,15 @@
   width: 100%;
   text-align: center;
   flex: 1;
-  border: 1px #ddd solid;
   padding: 20px;
   border-radius: 10px;
   transition:
     transform 0.5s ease,
     box-shadow 0.5s ease;
-  background-color: #fff;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #58cbca, #fdec7b) border-box;
+  border: 3px solid transparent;
 }
 
 .method-img {
@@ -95,8 +145,11 @@
 .method-item:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  /* z-index: 10; */
   border-color: #aaa;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #58cbca, #fdec7b) border-box;
+  border: 3px solid transparent;
 }
 
 .method-item h3 {
@@ -110,23 +163,25 @@
 
 .teacher {
   padding: 40px 0;
-  background-color: #fffbcc;
+  background: #f2fffd;
 }
 
 .teacher-list {
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .teacher-item {
   text-align: center;
   background: transparent;
   width: 335px;
-  border: 1px solid #ddd;
   padding: 10px;
   border-radius: 20px;
   background-color: #fff;
+  border: 2px solid #ccc;
+  border-top: 5px solid #2ec4b6;
   transition:
     transform 0.5s ease,
     box-shadow 0.5s ease;
@@ -136,7 +191,7 @@
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   /* z-index: 10; */
-  border-color: #aaa;
+  border-top: 5px solid #2ec4b6;
 }
 
 .teacher-img {
@@ -170,18 +225,19 @@
   line-height: 1.5;
 }
 
-.teacher-view-more {
-  text-align: center;
-  margin-top: 30px;
+.teacher-view-more i {
+  cursor: pointer;
 }
-
-.teacher-view-more a {
-  text-decoration: underline;
-  font-weight: 700;
-  color: #333;
-  font-family: "Sen", sans-serif;
+.teacher-more {
+  display: none;
+  margin-top: 70px;
 }
-
+.teacher-more.active {
+  display: block;
+}
+.teacher-view-more.active {
+  transform: rotate(180deg);
+}
 .library img {
   width: 100%;
   display: block;
