@@ -8,7 +8,7 @@
 #course-syllabus,
 #course-details,
 #course-register {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 130px;
 }
 /* ------------------------------------------------------------------- */
 /* Hero */
@@ -75,7 +75,6 @@
 .course-nav-list ul li {
   /* border: 3px solid #fff;
   background-color: #c5fffb; */
-  border-radius: 20px;
   text-align: center;
   font-weight: 700;
   cursor: pointer;
@@ -87,9 +86,13 @@
   background: #8ed1d6;
   color: white;
 }
-.course-nav-list a {
+.course-nav-list .nav-link {
   display: block;
   padding: 1rem 5rem;
+}
+.nav-link.active {
+  background-color: #8ed1d6;
+  border-radius: 40px;
 }
 /* ------------------------------------------------------- */
 /* Course intro */
@@ -172,7 +175,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 .goal-item {
   position: relative;

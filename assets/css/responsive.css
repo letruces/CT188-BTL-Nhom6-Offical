@@ -7,7 +7,7 @@
 
 /* Tablet and Mobile */
 @media (max-width: 991.98px) {
-  /* Trang chủ */
+  /* ==================Trang chủ========================== */
   .header .navbar {
     display: none;
   }
@@ -81,6 +81,12 @@
     background-color: bisque;
     color: burlywood;
   }
+  .sub-menu {
+    list-style-type: circle;
+  }
+  .sub-menu li {
+    margin-left: 2rem;
+  }
   .why-us-body,
   .roadmap-body-2,
   .feedback-body {
@@ -88,8 +94,10 @@
     align-items: center;
     row-gap: 15px;
   }
+  .why-us-reason,
   .feedback-item {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
   }
   .why-us,
   .consult,
@@ -125,7 +133,7 @@
     font-size: 1.2rem;
   }
   /* ----------------------------------------------------------------------- */
-  /* Giới thiệu */
+  /* ======================Giới thiệu============================= */
   .method-list,
   .teacher-list,
   .brand-content {
@@ -158,6 +166,29 @@
   .btn-contact {
     font-size: 0.75em;
     right: 20px;
+  }
+  /* ====================Khóa học riêng================================== */
+  .course-nav {
+    display: none;
+  }
+  .course-hero .course-img,
+  #course-register .inf-left {
+    display: none;
+  }
+  .course-hero-body .course-intro {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .course-details-body,
+  .course-more-body {
+    flex-direction: column;
+  }
+  .goal-item {
+    width: 80%;
+  }
+  #course-register .inf-right,
+  .course-more .course-item {
+    width: 100%;
   }
 }
 /* Tablet */

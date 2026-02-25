@@ -1,0 +1,55 @@
+/* Responsive */
+/* Tablet and Mobile */
+@media (max-width: 991.98px) {
+  /* Phan chung */
+  .course-body {
+    flex-direction: column;
+  }
+  /* An sidebar */
+  .course-sidebar {
+    display: none;
+  }
+  /* Video */
+  .section-video {
+    /* width: 100%;
+    height: auto; */
+    display: none;
+  }
+  /* Gioi thieu */
+  .hero_inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero_image img {
+    width: 95%;
+    height: auto;
+    margin: 20px 0;
+  }
+  /* Chuong trinh */
+  .program_content {
+    width: 90%;
+    border-radius: 0;
+    padding: 25px;
+    position: absolute;
+  }
+  /* Moi truong */
+  .environment_inner {
+    grid-template-columns: 1fr;
+  }
+  /* Khoa hoc */
+  .course_inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .course_item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1075px) {
+  .section-video {
+    display: none;
+  }
+}

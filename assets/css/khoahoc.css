@@ -12,6 +12,9 @@
 #tieuhoc-course {
   scroll-margin-top: 60px;
 }
+.course-content {
+  border: 1px solid #ccc;
+}
 /* --------------------------------------------------------- */
 /* Phần mầm non */
 /* Hero */
@@ -193,7 +196,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px;
+  /* height: 350px; */
 }
 
 .course_link {
@@ -236,6 +239,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 .course_action button {
   width: 90px;
@@ -245,7 +249,7 @@
   border-radius: 12px;
   animation: zoomInOut 0.7s ease-in-out infinite;
   cursor: pointer;
-  padding: 5px;
+  padding: 2px;
   border: none;
 }
 @keyframes zoomInOut {
