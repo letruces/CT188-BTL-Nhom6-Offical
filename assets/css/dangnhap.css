@@ -2,9 +2,9 @@
 .form-sign-in {
   flex: 1;
   /* width: 300px; */
-  height: auto;
-  margin: 100px 50px;
-  padding: 20px;
+  /* height: auto; */
+  margin: 135px 50px;
+  padding-bottom: 20px;
   background: linear-gradient(120deg, #c3e7d0, #8fd3f4);
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(212, 212, 212, 0.1);
@@ -55,6 +55,8 @@
 }
 .login-box > .login_nav > a {
   color: rgb(252, 89, 39);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* css icon toggle */
@@ -72,7 +74,7 @@
 
 .toggle {
   position: absolute;
-  right: 40px;
+  right: 10%;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;

@@ -263,6 +263,7 @@
 
 .consult-img img {
   width: 480px;
+  height: 500px;
   border-radius: 50px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }

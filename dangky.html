@@ -114,9 +114,53 @@
       </div>
     </div>
     <main>
-      <div class="container">
-        <div class="register-body">Bạn code ở đây nha</div>
-      </div>
+      <div class="container_login">
+        <div><img src="./assets/img/dangky/hinhdangky.png" alt="" class="login-img"/></div>
+        <form action="" class="form-sign-in">
+          <h1>CHÀO MỪNG BẠN!</h1>
+          <div class="login-box">
+            <input
+              type="text"
+              id="fullname"
+              placeholder="Họ và tên"
+              required
+            />
+            <input
+              type="text"
+              id="email"
+              placeholder="Email hoặc SĐT"
+              required
+              autocomplete="off"
+            />
+            <div class="password-box">
+              <input
+                type="password"
+                id="password"
+                placeholder="Mật khẩu"
+                required
+              />
+              <span class="toggle" onclick="togglePassword()">👁</span>
+            </div>
+
+            <div class="password-box">
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Nhập lại mật khẩu"
+                required
+              />
+              <span class="toggle" onclick="toggleConfirmPassword()">👁</span>
+            </div>
+            <button type="button" class="login" onclick="register()">
+              Đăng ký
+            </button>    
+            <div class="login_nav">
+              <p>Đã có tài khoản?</p>
+              <a href="./dangnhap.html">Đăng nhập</a>
+            </div>
+          </div>
+        </form>
+     </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -173,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/js/dangky.js"></script>
   </body>
 </html>
