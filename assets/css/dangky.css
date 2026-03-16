@@ -1,5 +1,5 @@
 /* form đăng ký */
-.form-sign-in {
+.form-register {
   flex: 1;
   /* height: auto; */
   margin: 55px 50px;
@@ -11,14 +11,14 @@
 }
 
 /* tiêu đề */
-.form-sign-in h1 {
+.form-register h1 {
   font-weight: 700;
   font-size: 20px;
   margin: 30px 0;
 }
 
 /* input chung */
-.login-box input {
+.register-box input {
   width: 90%;
   padding: 15px 20px;
   margin-top: 10px;
@@ -51,7 +51,7 @@
 }
 
 /* nút đăng ký */
-.login-box > .login {
+.register-box > .register {
   font-size: 20px;
   width: 50%;
   padding: 10px;
@@ -63,29 +63,46 @@
   margin-bottom: 25px;
 }
 
-.login-box > .login:hover {
+.register-box > .register:hover {
   background: #0056b3;
 }
 
 /* điều hướng */
-.login-box > .login_nav {
+.register-box > .register_nav {
   margin-top: 10px;
 }
 
-.login-box > .login_nav p {
+.register-box > .register_nav p {
   display: inline;
   margin-right: 10px;
 }
 
-.login-box > .login_nav a {
+.register-box > .register_nav a {
   color: rgb(252, 89, 39);
   text-decoration: none;
   font-weight: 600;
 }
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 
+.terms input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.terms label {
+  font-size: 14px;
+}
 /* CONTAINER */
 
-.container_login {
+.container_register {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -99,11 +116,11 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.container_login > div {
+.container_register > div {
   flex: 1;
 }
 
-.container_login > div > img {
+.container_register > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;

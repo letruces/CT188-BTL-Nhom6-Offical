@@ -1,13 +1,18 @@
 // Submit form đăng ký
-const form = document.querySelector(".form-sign-in");
+const form = document.querySelector(".form-register");
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // chặn reload trang
 
   const password = document.getElementById("password").value;
   const confirm = document.getElementById("confirmPassword").value;
+  let agree = document.getElementById("agree").checked;
 
   if (password !== confirm) {
     alert("Mật khẩu không khớp!");
+    return;
+  }
+  if (agree === false) {
+    alert("Bạn phải đồng ý với điều khoản và dịch vụ!");
     return;
   }
   alert("Đăng ký thành công!");
