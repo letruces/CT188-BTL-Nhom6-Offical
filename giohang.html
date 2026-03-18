@@ -15,14 +15,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/dangky.css" />
+    <link rel="stylesheet" href="./assets/css/trangchu.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
       type="image/x-icon"
     />
-    <title>SkillHub - Đăng ký</title>
+    <title>SkillHub - Trang chủ</title>
   </head>
   <body>
     <header class="header fixed">
@@ -32,7 +32,11 @@
           <nav class="navbar">
             <ul class="navbar-left">
               <li>
-                <a href="index.html" >Trang chủ</a>
+                <a
+                  href="index.html"
+                  class="home-style"
+                  >Trang chủ</a
+                >
               </li>
               <li><a href="./gioithieu.html">Giới thiệu</a></li>
               <li><a href="./khoahoc.html">Khóa học</a></li>
@@ -40,7 +44,7 @@
             <ul class="navbar-right">
               <a href="./giohang.html"><span class="shopping-icon-frame"><i class="fa-solid fa-cart-shopping shopping-icon color-chocolate"></i></span></a>
               <li class="frame">
-                <a href="./dangky.html" class="color-chocolate home-style" >Đăng ký</a>
+                <a href="./dangky.html" class="color-chocolate">Đăng ký</a>
               </li>
               <li class="frame">
                 <a href="./dangnhap.html" class="color-green">Đăng nhập</a>
@@ -95,17 +99,16 @@
         </div>
         <ul class="menu-drawer-list">
           <li>
-            <i class="fa-regular fa-house"></i><a href="index.html" class="navbar-link">Trang chủ</a>
+            <a href="index.html" class="navbar-link">Trang chủ</a>
           </li>
-          <li><i class="fa-regular fa-map"></i><a href="./gioithieu.html" class="navbar-link" >Giới thiệu</a></li>
+          <li><a href="./gioithieu.html" class="navbar-link" >Giới thiệu</a></li>
           <li>
-            <i class="fa-brands fa-discourse"></i><a href="./khoahoc.html" >Khóa học</a>
+            <a href="./khoahoc.html" >Khóa học</a>
             <ul class="sub-menu">
               <li><a href="./khoahoc.html" class="navbar-link">Khóa học Mầm non</a></li>
               <li><a href="./tieuhoc.html" class="navbar-link">Khóa học Tiểu học</a></li>
             </ul>
           </li>
-          <li><i class="fa-brands fa-opencart"></i><a href="./giohang.html" class="navbar-link">Giỏ hàng</a></li>
           <li>
             <a href="./dangky.html" class="navbar-link color-chocolate">Đăng ký</a>
           </li>
@@ -115,59 +118,6 @@
         </ul>
       </div>
     </div>
-    <main>
-      <div class="container_register">
-        <div><img src="./assets/img/dangky/hinhdangky.png" alt="" class="register-img"/></div>
-        <form action="" class="form-register">
-          <h1>CHÀO MỪNG BẠN!</h1>
-          <div class="register-box">
-            <input
-              type="text"
-              id="fullname"
-              placeholder="Họ và tên"
-              required
-            />
-            <input
-              type="text"
-              id="email"
-              placeholder="Email hoặc SĐT"
-              required
-              autocomplete="off"
-            />
-            <div class="password-box">
-              <input
-                type="password"
-                id="password"
-                placeholder="Mật khẩu"
-                required
-              />
-              <span class="toggle">👁</span>
-            </div>
-
-            <div class="password-box">
-              <input
-                type="password"
-                id="confirmPassword"
-                placeholder="Nhập lại mật khẩu"
-                required
-              />
-              <span class="toggle">👁</span>
-            </div>
-            <div class="terms">
-              <input type="checkbox" id="agree" />
-              <label for="agree">Tôi đồng ý với điều khoản và dịch vụ</label>
-            </div>
-            <button type="submit" class="register">
-              Đăng ký
-            </button>    
-            <div class="register_nav">
-              <p>Đã có tài khoản?</p>
-              <a href="./dangnhap.html">Đăng nhập</a>
-            </div>
-          </div>
-        </form>
-     </div>
-    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
@@ -223,6 +173,9 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/js/dangky.js"></script>
+    <a href="" class="btn-contact">
+      <i class="fa-brands fa-facebook-messenger color-blue"></i>
+    </a>
+    <script src="./assets/js/trangchu.js"></script>    
   </body>
 </html>

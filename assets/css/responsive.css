@@ -56,7 +56,8 @@
     font-size: 2rem;
   }
   .menu-drawer-list a {
-    display: block;
+    display: inline-block;
+    margin-left: 5px;
   }
   .navbar-link:hover {
     background-color: #fffbcc;

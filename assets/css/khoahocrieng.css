@@ -53,6 +53,22 @@
   width: 100%;
   border-radius: 50px;
 }
+.price {
+  display: flex;
+  padding: 5px 0 10px 0;
+  align-items: center;
+}
+.course-price {
+  font-size: 2rem;
+  color: orange;
+  font-weight: 700;
+}
+.off-price {
+  font-size: 1.5rem;
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
 /* Course nav */
 .course-nav {
   border: 3px solid #bfe5eb;

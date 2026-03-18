@@ -219,6 +219,7 @@ a {
   flex-grow: 4;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
@@ -232,6 +233,22 @@ nav a {
 
 nav a:hover {
   text-shadow: 0.4px 0 0 currentColor;
+}
+.frame {
+  padding: 10px 0;
+  border-radius: 20px;
+  background-color: white;
+}
+.frame:hover {
+  opacity: 0.7;
+}
+.shopping-icon-frame {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.shopping-icon-frame:hover {
+  opacity: 0.7;
 }
 /* ---------------------------------------------------------------------------- */
 /* Footer */
