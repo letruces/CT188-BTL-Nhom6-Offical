@@ -210,6 +210,9 @@
     width: 100%;
   }
   /* ===============Giỏ hàng====================================================== */
+  .shopping h1 {
+    text-align: center;
+  }
   .cart-item {
     flex-direction: column;
   }
