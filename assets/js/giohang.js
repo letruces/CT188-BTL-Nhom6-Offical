@@ -121,5 +121,5 @@ const modalForm = document.getElementById("modal-form");
 modalForm.addEventListener("submit", (e) => {
   e.preventDefault();
   alert("Đặt hàng thành công!");
-  window.location.href = "./index.html";
+  window.location.href = "index.html";
 });

@@ -16,7 +16,7 @@ form.addEventListener("submit", function (e) {
     return;
   }
   alert("Đăng ký thành công!");
-  window.location.href = "../index.html";
+  window.location.href = "index.html";
 });
 // JS ẩn hiện mật khẩu
 const toggles = document.querySelectorAll(".toggle");
