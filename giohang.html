@@ -15,14 +15,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/trangchu.css" />
+    <link rel="stylesheet" href="./assets/css/giohang.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
       type="image/x-icon"
     />
-    <title>SkillHub - Trang chủ</title>
+    <title>SkillHub - Giỏ hàng</title>
   </head>
   <body>
     <header class="header fixed">
@@ -118,6 +118,38 @@
         </ul>
       </div>
     </div>
+    <main class="shopping">
+      <div class="container">
+        <div class="empty-cart">
+          <img src="./assets/img/giohang/empty_cart.webp" alt="Giỏ hàng trống">
+          <p>Bạn chưa có khóa học nào trong giỏ hàng</p>
+          <a href="./khoahoc.html#mamnon-course"><button>Mua Khóa Học Ngay</button></a>
+        </div>
+        <div id="cart-content" class="dis-none">
+          <div id="cart-list"></div>
+          <h3>
+            Tổng thanh toán: <span id="total-price">0</span><strong>đ</strong>
+          </h3>
+          <div class="checkout-frame"><button id="checkout-btn">Xác nhận thanh toán</button></div>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <!-- Modal Form -->
+      <div class="modal" id="modal">
+        <h2>XÁC NHẬN THANH TOÁN</h2>
+        <form id="modal-form">
+          <input type="text" placeholder="Nhập tên" required />
+          <input type="text" placeholder="Nhập địa chỉ" />
+          <input type="text" placeholder="Số điện thoại" required />
+          <input type="radio" name="checkout-method" id="cash" value="cash" class="checkout-method">
+          <label for="cash">Thanh toán khi nhận hàng<br></label>
+          <input type="radio" name="checkout-method" id="bank" value="bank" class="checkout-method" >
+          <label for="bank">Thanh toán qua ngân hàng</label>
+          <input type="submit" class="modal-submit" value="THANH TOÁN" />
+        </form>
+        <button id="closeBtn">Đóng</button>
+      </div>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
@@ -176,6 +208,6 @@
     <a href="" class="btn-contact">
       <i class="fa-brands fa-facebook-messenger color-blue"></i>
     </a>
-    <script src="./assets/js/trangchu.js"></script>    
+    <script src="./assets/js/giohang.js"></script>    
   </body>
 </html>

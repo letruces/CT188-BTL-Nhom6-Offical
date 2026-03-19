@@ -209,4 +209,23 @@
   .course-more .course-item {
     width: 100%;
   }
+  /* ===============Giỏ hàng====================================================== */
+  .cart-item {
+    flex-direction: column;
+  }
+  .cart-info h4 {
+    margin: 10px 0;
+  }
+  .cart-info p {
+    display: none;
+  }
+  .cart-total {
+    margin: 15px 0 15px 0;
+  }
+  .shopping h3 {
+    text-align: center;
+  }
+  .checkout-frame {
+    justify-content: center;
+  }
 }
