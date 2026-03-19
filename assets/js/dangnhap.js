@@ -7,7 +7,7 @@ function login() {
   if (username === "" || password === "") {
     alert("Nhập đầy đủ thông tin!");
   } else if (username === correctUser && password === correctPass) {
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Sai tài khoản hoặc mật khẩu!");
   }

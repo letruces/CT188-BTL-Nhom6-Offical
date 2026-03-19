@@ -70,7 +70,7 @@ buttons.forEach((btn) => {
     addToCart(product);
     alert("Đã thêm vào giỏ!");
     setTimeout(() => {
-      window.location.href = "giohang.html";
+      window.location.href = "./giohang.html";
     }, 800);
   });
 });
