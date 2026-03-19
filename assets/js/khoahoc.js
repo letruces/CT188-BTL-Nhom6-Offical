@@ -44,22 +44,7 @@ overlay.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
-// Thêm sản phẩm vào giỏ hàng
-const buttons = document.querySelectorAll(".add-shopping");
-buttons.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    const course = btn.closest(".course_item");
-    const product = {
-      id: course.dataset.id,
-      name: course.dataset.name,
-      price: Number(course.dataset.price),
-    };
-    addToCart(product);
-    if (confirm("Đã thêm vào giỏ! Xem giỏ hàng?")) {
-      window.location.href = "../giohang.html";
-    }
-  });
-});
+//===================== Thêm sản phẩm vào giỏ hàng===============
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -73,3 +58,19 @@ function addToCart(product) {
 
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+const buttons = document.querySelectorAll(".add-shopping");
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const course = btn.closest(".course_item");
+    const product = {
+      id: course.dataset.id,
+      name: course.dataset.name,
+      price: Number(course.dataset.price),
+    };
+    addToCart(product);
+    alert("Đã thêm vào giỏ!");
+    setTimeout(() => {
+      window.location.href = "../giohang.html";
+    }, 800);
+  });
+});
