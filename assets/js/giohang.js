@@ -120,6 +120,6 @@ overlay.addEventListener("click", () => {
 const modalForm = document.getElementById("modal-form");
 modalForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Đặt hàng thành công!");
+  alert("Mua khóa học thành công! Cảm ơn bạn đã mua khóa học tại SkillHub!");
   window.location.href = "./index.html";
 });
